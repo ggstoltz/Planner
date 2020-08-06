@@ -25,7 +25,8 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p class="lead">A simple calendar app for scheduling your work day</p><br>
+      <p id="p1"></p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
@@ -33,55 +34,55 @@
         
         <div id="blockNine" class="time-block">
           <h2>9:00am</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockTen" class="time-block">
           <h2>10:00am</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockEleven" class="time-block">
           <h2>11:00am</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockNoon" class="time-block">
           <h2>12:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockOne" class="time-block">
           <h2>1:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockTwo" class="time-block">
           <h2>2:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockThree" class="time-block">
           <h2>3:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save<Save/button>
         </div>
 
         <div id="blockFour" class="time-block">
           <h2>4:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
 
         <div id="blockFive" class="time-block">
           <h2>5:00pm</h2>
-          <textarea placeholder="Add Item"></textarea>
+          <textarea id="note" placeholder="Add Item"></textarea>
           <button class="saveBtn">Save</button>
         </div>
       </div>
@@ -89,7 +90,40 @@
       </div>
     
     </div>
+    <!-- Time -->
+    <script>
 
+      var currentDay = moment().format('LT');
+      var save = document.querySelector(".saveBtn");
+      var currentHour = document.querySelector(".present");
+      
+      document.getElementById("p1").innerHTML = time;
+      
+      
+      currentHour.classList.add;
+
+document.getElementById("saveBtn").addEventListener("click", function () {
+
+  var user = document.getElementById("note").value;
+  localStorage.setItem("note", note);
+  alert("Note Saved");
+  console.log("Note saved")
+
+  
+
+
+
+
+
+},);
+
+
+
+      </script>
+
+
+    <!-- Other -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
